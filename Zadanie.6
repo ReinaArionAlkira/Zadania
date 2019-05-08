@@ -1,0 +1,31 @@
+const readlineSync = require('readline-sync');
+
+
+var suma=0;
+var licznik=0;
+var srednia=0;
+var b = readlineSync.questionInt();
+var min=b;
+var max=b;
+do{
+    var a = readlineSync.questionInt();
+    suma += a;
+    if(a!=0){
+        if(a < min){
+          min = a;
+        }
+        if(a > max){
+
+         max=a;
+         
+        }
+    }
+    licznik++;
+}
+while (a!=0) {
+    srednia= suma/licznik;
+    console.log("Suma liczb:"+ suma)
+    console.log("Średnia liczb:"+ srednia)
+    console.log("Minimalna:"+ min)
+    console.log("Maksymalna:"+ max)
+}
