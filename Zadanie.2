@@ -1,14 +1,11 @@
 [,,a,b] = process.argv;
 
-var A = Number(a);
-var suma=A;
+var a = suma = Number(a);
 
-for(var i=4; i<b; i++){
-    
-    A++;
-    suma=suma + A;
+for(; a<b; a++){
 
-    console.log("a: " + A)
-    console.log(suma)
+    suma += a;
+
+    console.log("a: " + a)
 }
 console.log(suma)
