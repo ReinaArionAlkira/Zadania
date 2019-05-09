@@ -3,20 +3,24 @@ const readlineSync = require('readline-sync');
 
 var x= readlineSync.questionInt();
 var y= readlineSync.questionInt();
-var a= readlineSync.questionInt();
-var b= readlineSync.questionInt();
+var szer= readlineSync.questionInt();
+var wys= readlineSync.questionInt();
 
-for(var i=1; i<y;i++){
-    for(var j=1; j<x;j++){
-        console.log(" ")
+var lineOfMarks = "";
+var blindLine = "";
+
+for (var j=1; j<y; j++) console.log(" ")
+for(var s=0; s<x; s++) blindLine += " ";
+
+for (var i = 0; i < wys; i++) {
+  lineOfMarks = "";
+  for (var j = 0; j < szer; j++) {
+    lineOfMarks = lineOfMarks + "*";
     }
+
+  console.log(blindLine + lineOfMarks);
 }
-for (var i=1; i<a; i++){
-    console.log("x"+ "\n")
-    for (var j=0; j<b; j++)
-    console.log("x")
-}
-console.log(a)
-console.log(b)
-console.log(x)
-console.log(y)
+
+/*
+
+*/
