@@ -1,8 +1,3 @@
-const readlineSync = require('readline-sync');
-
-var a = readlineSync.questionInt();
-var b = readlineSync.questionInt();
-var c = readlineSync.questionInt();
 
 function triangleArea (a, b, c) {
   if (a + b > c && a + c > b && c + b > a){
