@@ -5,7 +5,7 @@ var x= readlineSync.questionInt();
 var y= readlineSync.questionInt();
 var szer= readlineSync.questionInt();
 var wys= readlineSync.questionInt();
-
+var Mark= readlineSync.questionFloat();
 var lineOfMarks = "";
 var blindLine = "";
 
@@ -15,7 +15,7 @@ for(var s=0; s<x; s++) blindLine += " ";
 for (var i = 0; i < wys; i++) {
   lineOfMarks = "";
   for (var j = 0; j < szer; j++) {
-    lineOfMarks = lineOfMarks + "*";
+    lineOfMarks = lineOfMarks + Mark;
     }
 
   console.log(blindLine + lineOfMarks);
