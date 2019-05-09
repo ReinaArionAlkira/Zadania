@@ -1,0 +1,1 @@
+function stringRotate(a, b)
