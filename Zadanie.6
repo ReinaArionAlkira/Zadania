@@ -1,31 +1,14 @@
 const readlineSync = require('readline-sync');
 
-
-var suma=0;
-var licznik=0;
-var srednia=0;
-var b = readlineSync.questionInt();
-var min=b;
-var max=b;
+var losowa = Math.floor(Math.random()*100+1)
 do{
-    var a = readlineSync.questionInt();
-    suma += a;
-    if(a!=0){
-        if(a < min){
-          min = a;
-        }
-        if(a > max){
 
-         max=a;
-         
-        }
+    var a = readlineSync.questionInt();
+    if(a != losowa){
+        if(a<losowa) {console.log("Podałeś za małą wartość")}
+        if(a>losowa) {console.log("Podałeś za dużą wartość")}
     }
-    licznik++;
 }
-while (a!=0) {
-    srednia= suma/licznik;
-    console.log("Suma liczb:"+ suma)
-    console.log("Średnia liczb:"+ srednia)
-    console.log("Minimalna:"+ min)
-    console.log("Maksymalna:"+ max)
+while (a != losowa) {
+    console.log("Gratulacje")
 }
