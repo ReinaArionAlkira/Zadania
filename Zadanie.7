@@ -1,19 +1,23 @@
-[,,a,b] = process.argv;
 
-var a = suma = Number(a);
-a++;
-do{
-    suma += a;
-    a++;
-}
-while (a > b) console.log(suma)
-for (; a <= b; a++) {
+const readlineSync = require('readline-sync');
 
-    suma += a;
+var x= readlineSync.questionInt();
+var y= readlineSync.questionInt();
+var a= readlineSync.questionInt();
+var b= readlineSync.questionInt();
+
+for(var i=1; i<y;i++){
+    for(var j=1; j<x;j++){
+        console.log(" ")
+    }
 }
-console.log(suma)
-while (a > b){
-    suma += a;
-    a++;
+for (var i=1; i<a; i++){
+    console.log("x"+ "\n")
+    for (var j=0; j<b; j++)
+    console.log("x")
 }
-console.log(suma)
+console.log("x")
+console.log(a)
+console.log(b)
+console.log(x)
+console.log(y)
