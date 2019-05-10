@@ -1,0 +1,3 @@
+function getTotalNumberOfNewYaersEveSundays(a, b) {
+  
+}
