@@ -1,0 +1,3 @@
+function strangeSum(a, b) {
+  
+}
