@@ -9,7 +9,7 @@ var char = readlineSync.keyIn();
 var lineOfMarks = "";
 var blindLine = "";
 
-for (var j=1; j<y; j++) console.log(" ")
+for (var j=0; j<y; j++) console.log(" ")
 for(var s=0; s<x; s++) blindLine += " ";
 
 for (var i = 0; i < hight; i++) {
