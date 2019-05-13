@@ -16,7 +16,6 @@ for (let y = 0; y < 5; y++) {
   result += "\n";
 }
 
-//Minimalne wartości w wierszach i maksymalne w kolumnach
 result += "Minimalne wartości w wierszach:\n";
 for (let y = 0; y < 5; y++) {
   let min = Number.MAX_VALUE;
@@ -37,7 +36,7 @@ for (let x = 0; x < 5; x++) {
   result += x + ":" + ((max < 0) ? " " : "  ") + max + "\n";
 }
 
-//Maks d1, min d2
+//Maksymalna na 1 przekątnej, minimalna na 2 przekątnej
 var max = Number.MIN_VALUE;
 var min = Number.MAX_VALUE;
 for (let i = 0; i < 5; i++) {
@@ -46,8 +45,6 @@ for (let i = 0; i < 5; i++) {
 }
 result += "Maksimum na 1. przekątnej: " + max + "\n";
 result += "Minimum na 2. przekątnej: " +  min;
-
-// </editor-fold>
 
 //Wyświetlanie wyniku działania
 console.log(result);
