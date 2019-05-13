@@ -13,7 +13,7 @@ for (var i = 0; i < array.length; i++) {
 console.log("Tablica:", array.join(" | "))
 
 //Obliczanie powtórzeń
-for (var i = 0; i < array1.length; i++) {
+for (var i = 1; i <= array1.length; i++) {
   var count = 0;
   for (var j = 0; j < 20; j++) {
     array[j] === i ? count++ : 0;
