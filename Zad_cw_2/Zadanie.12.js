@@ -6,12 +6,12 @@ var zligr = cena.split(" ");
 var zl = +zligr[0];
 var gr = +zligr[1];
 
-var cenaGr = zl * 100 + gr;
+var gr = zl * 100 + gr;
 
 var zl5 = Math.floor(gr/500);
 gr -= zl5 * 500;
 
-var zl2 = Math.floor(amount_gr/200);
+var zl2 = Math.floor(gr/200);
 gr -= zl2 * 200;
 
 var zl1 = Math.floor(gr/100);
@@ -20,7 +20,7 @@ gr -= zl1 * 100;
 var gr50= Math.floor(gr/50);
 gr -= gr50 * 50;
 
-var gr20 = Math.floor(amount_gr/20);
+var gr20 = Math.floor(gr/20);
 gr -= gr20 * 20;
 
 var gr10= Math.floor(gr/10);
@@ -30,11 +30,11 @@ var gr5= Math.floor(gr/5);
 gr -= gr5 * 5;
 
 var gr2= Math.floor(gr/2);
-amount_gr -= gr5  * 2;
+gr -= gr5  * 2;
 
 var gr1 = Math.floor(gr/1);
 gr -= gr5 * 1;
-
+let result = "";
 if(zl5 > 0) result+= zl5 + " x 5zł\n";
 if(zl2 > 0) result+= zl2 + " x 2zł\n";
 if(zl1 > 0) result+= zl1 + " x 1zł\n";
