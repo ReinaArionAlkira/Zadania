@@ -1,6 +1,6 @@
 var array = new Array(10);
-var max = 0;
-var min = 0;
+var max = Number.MIN_VALUE;
+var min = Number.MAX_VALUE;
 var sum = 0;
 var less = 0;
 var more = 0;
