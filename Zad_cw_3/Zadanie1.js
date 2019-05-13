@@ -1,11 +1,13 @@
-var array = [2,6,-2];
+var array = new Array(10);
 var max = 0;
 var min = 0;
 var sum = 0;
 var less = 0;
 var more = 0;
 
+
 for (var i=0; i < array.length; i++) {
+    array[i] = Math.floor(Math.random() * (21) - 10);
     if (max <= array[i]) max = array[i];
     if (min >= array[i]) min = array[i];
     sum += array[i];
