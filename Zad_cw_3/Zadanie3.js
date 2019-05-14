@@ -39,9 +39,9 @@ for (var x = 0; x < 5; x++) {
 //Maksymalna na pierwszej i minimalna na drugiej przekątnej
 var max = Number.MIN_VALUE;
 var min = Number.MAX_VALUE;
-for (var i = 0; i < 5; i++) {
-  if (array[i][i] > max) max = array[i][i];
-  if (array[4-i][i] < min) min = array[4-i][i];
+for (var j = 0; j < 5; j++) {
+  if (array[j][j] > max) max = array[j][j];
+  if (array[4-j][j] < min) min = array[4-j][j];
 }
 result += "Maksimum na pierwszej przekątnej: " + max + "\n";
 result += "Minimum na drugiej przekątnej: " +  min;
