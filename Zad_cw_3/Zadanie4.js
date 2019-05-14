@@ -18,16 +18,18 @@ var char = decNum < 0 ? 1 : 0;
 result += "Liczba " + decNum + " binarnie: ";
 decNum = decNum * (decNum < 0 ? -1 : 1);
 
+//wprowadzanie cyfr na początek tablicy
 while(true){
   binArray.unshift(decNum % 2);
   decNum = Math.floor(decNum / 2);
 
+//wprowadzenie znaku liczby na początek tablicy
   if(decNum < 1){
     binArray.unshift(char);
     break;
   }
 }
-
+//dodanie tablicy do wyniku końcowego
 for(var i = 0; i < binArray.length; i++){
   result += binArray[i] + (i === 0 ? "." : "")
 }
