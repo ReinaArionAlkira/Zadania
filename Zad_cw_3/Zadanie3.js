@@ -20,7 +20,7 @@ result += "Minimalne wartości w wierszach:\n";
 for (var y = 0; y < 5; y++) {
   var min = Number.MAX_VALUE;
   for (var x = 0; x < 5; x++) {
-    if (array[y][x] < min) min = array[x][y];
+    if (array[y][x] < min) min = array[y][x];
   }
 
   result += y + ":" + ((min < 0) ? " " : "  ") + min + "\n";
@@ -30,7 +30,7 @@ result += "Maksymalne wartości w kolumnach:\n";
 for (var x = 0; x < 5; x++) {
   var max = Number.MIN_VALUE;
   for (var y = 0; y < 5; y++) {
-    if (array[y][x] > max) max = array[x][y];
+    if (array[y][x] > max) max = array[y][x];
   }
 
   result += x + ":" + ((max < 0) ? " " : "  ") + max + "\n";
