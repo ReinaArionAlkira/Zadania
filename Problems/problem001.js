@@ -9,5 +9,3 @@ function triangleArea (a, b, c) {
   }
   else return (-1)
 }
-
-// triangleArea (a, b, c);
