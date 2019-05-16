@@ -1,15 +1,12 @@
 const readlineSync = require('readline-sync');
-// </editor-fold>
 
 //Zmienna finalnie wyświetlana jako wynik działania programu
 var result = "";
 
-// <editor-fold desc="Input">
-//Inputy podawane przez użytkownika
+//dane podawane przez użytkownika
 var n = readlineSync.questionInt("Podaj liczbę (> 0): ");
-// </editor-fold>
 
-// <editor-fold desc="Operacje wykonywane przez program" >
+
 // Algorytm Euklidesa
 var euklid = function (n1, n2) {
   // Ustalenie, która liczba jest większa
