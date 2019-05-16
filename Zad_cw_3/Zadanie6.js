@@ -41,12 +41,13 @@ for (var y = 0; y <= n; y++) {
     array[y][x] = (euklid(array[0][x],array[y][0]) === 1);
     array[y][x] = array[y][x] ? "+" : ".";
   }
+  //array.join("\n");
 }
-console.log(array)
+result += array.join("\n");
 /*for (var y = 0; y <= n; y++) {
   array[y] = [];
   for (var x = 0; x <= n; x++) {
-    result += array[y][x] + " | "";
+    result += array[y][x] + " ";
   }
 result += "\n";
 }
